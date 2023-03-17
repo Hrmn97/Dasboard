@@ -17,7 +17,7 @@ function App() {
 
   
   return (
-    <div>
+    <div className=''>
       <BrowserRouter>
         <div className='flex relative dark:bg-main-dark-bg'>
           <div className='fixed right-4 bottom-4' style={{zIndex: '1000'}}>
@@ -44,7 +44,7 @@ function App() {
             <div className='fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full'>
               <Navbar />
             </div>
-          </div>
+          
           
 
             <div>
@@ -74,6 +74,7 @@ function App() {
                 <Route path="/pyramid" element={ <Pyramid />} />
                 <Route path="/stacked" element={ <Stacked />} />
               </Routes>
+            </div>
             </div>
 
         </div>
